@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove text</title>
+</head>
+<body>
+    <ul class="language">
+        <li > html</li>
+        <li >css</li>
+        <li >javascript</li>
+        <li >python</li>
+
+       
+    </ul>
+   <script>
+function addLanguage (languageName){
+
+let li = document.createElement("li")
+ li.innerText=`${languageName}`
+document.querySelector(".language").appendChild(li)
+}
+
+addLanguage("htmol csssss")
+
+
+function addOptionLanguaue(languageName){
+    let li = document.createElement("li");
+    li.appendChild(document.createTextNode(`${languageName}`))
+    document.querySelector(".language").appendChild(li)
+}
+addOptionLanguaue("google");
+
+
+// ************* EDIT ********************
+// let secLAnguage = document.querySelector("li:nth-child(2)");
+// secLAnguage.innerHTML="fhkjhdkjhasd"
+
+// let newli = document.createElement("li").textContent="hello hai"
+// secLAnguage.replaceWith(newli)
+
+
+// function change(language){
+// let ul = document.querySelector(".language");
+// console.log(ul)
+// let li = document.createElement("li").appendChild(document.createTextNode(`${language}`));
+// ul.appendChild(li)
+
+// }
+// change("2222");
+
+
+const firstChild = document.querySelector("li:first-child")
+console.log(firstChild)
+// firstChild.outerHTML="<h1> hello </h1>"
+firstChild.remove()
+console.log(firstChild);
+   </script> 
+</body>
+</html>

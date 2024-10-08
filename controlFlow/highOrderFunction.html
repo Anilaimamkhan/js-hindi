@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>high order function</title>
+  </head>
+  <body>
+    <script>
+      //    for of loop
+      // let myArr = ["anila", "komal", "kehkhashan", "banoo"];
+      // for (const element of myArr) {
+      //     console.log(element)
+      // }
+
+      // string for of loop
+      // let str = "anila bano"
+      // for (const val of str) {
+      //     console.log(val)
+      // }
+
+      // map
+      // let  map = new Map()
+      // map.set("in", "india");
+      // map.set("pak","pakistan")
+      // console.log(map)
+      // for (const key of map) {
+      //   console.log(map[key])
+      // }
+
+      // for (const val of map) {
+      //    console.log(val)
+      // }
+
+      // for (const [val,value] of map) {
+      //    console.log(val, value)
+      // }
+
+      // let arr = ["ab", "cd", "ef"];
+      // for (const key  in arr) {
+      //   console.log(arr[key])
+      // }
+
+      // for (const element of arr) {
+      //     console.log(element)
+      // }
+      // ********** OBJECT ***************
+      // let obj = {
+      //     name:"anila",
+      //     age :20,
+      //     relijion : "islam"
+      // }
+      // for (const i in obj) {
+      // //  console.log(obj[i])
+      // console.log(i)
+      // }
+
+      // FOR EACH LOOP
+      // const language = ["java", "react" , "nodejs" , "angular"]
+      // language.forEach((e)=> {
+      //     console.log(e)
+      // })
+
+      // function print(item){
+      //     console.log(item)
+      // }
+      // language.forEach(print)
+
+      // EXAMPLE # 4
+      // let language = [
+      //     {
+      //         languageName: "js",
+      //         languageFile: "javascript"
+      //     },
+      //     {
+      //         languageName:"ru",
+      //         languageFile:"ruby"
+      //     },
+      //     {
+      //         languageName:"html",
+      //         languageFile:"haper Text Markeup language"
+      //     }
+      // ]
+      // language.forEach((e)=> {
+      // console.log(e.languageFile)
+      // })
+
+      // EXAMPLE # 5
+      // let filterArr = [1,2,3,4,5,6,7,8,9,10];
+      // let newFilter = filterArr.filter((e)=> {
+      // return e>4
+      // })
+      // console.log(newFilter)
+
+      //   let myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      //   const newNums = [];
+      //   myNums.forEach((number) => {
+      //     if (number > 4){
+      //         newNums.push(number);
+      //     }
+      //   });
+      //   console.log(newNums)
+
+      // FOR EACH SE BI HO SKTA HAI BUT FILTER EASY HAI
+      //   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      //   let newArr = [];
+      //   arr.forEach((val)=> {
+      //     if(val>4){
+      //         newArr.push(val)
+      //     }
+      //   })
+      //   console.log(newArr)
+
+      // EXAMPLE # 5 BOOK ARRAY OBJECT
+
+      let book = [
+        {
+          tile: "book one",
+          genre: 1,
+          publish: 1991,
+        },
+        {
+          tile: "book two",
+          genre: 2,
+          publish: 1992,
+        },
+        {
+          tile: "book one",
+          tile: "book three",
+          genre: 3,
+          publish: 1993,
+        },
+        {
+          tile: "book four",
+          genre: 4,
+          publish: 1993,
+        //   publish: 1994,
+
+        },
+      ];
+
+    //   let newFil = book.filter((e) => e.tile === "book one");
+    //   console.log(newFil);
+
+    // let pub = book.filter((val)=> val.publish == 1993)
+    // console.log(pub)
+
+
+    // EXAMPLE # 5 ADD 10
+    // const number = [1,2,3,4,5,6,7,8,9,10]
+    // let newNum = number.map((e ) =>{
+    //  return `${e + 10}`  
+    // });
+    // console.log(newNum)
+
+    const number = [1,2,3,4,5,6,7,8,9,10]
+let newNumber = number.map((val)=> val*10)
+.map((val)=> val +1)
+.filter((e)=> e > 70)
+
+console.log(newNumber)
+
+
+    </script>
+
+
+
+  </body>
+</html>

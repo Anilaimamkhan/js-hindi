@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <p>this is a para <span>one</span></p>
+      <p class="para">this is a para <span>two</span></p>
+
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>foue</li>
+      </ul>
+    </div>
+
+    <script>
+      // NODE LIST KO HUM AESE LIKH SKTE HAI
+      // let ul = document.querySelectorAll("ul li")
+      // ul[0].style.color AESE KR K LIKH SKTE HAI CHAILD NODE KO OR CHILD NODE PR FOR EACH LGA SKTE HAI
+
+      // HTML COLLECTION KO
+      // Array.from krengy to map wagera chala skte hai q k array pr hi map chl skta hai
+
+      
+      
+      
+      
+      //   let idContainer = document.getElementById("container").textContent;
+      // let idContainer = document.getElementById("container").innerHTML;
+      // let idContainer = document.getElementById("container").innerText;
+      // let idContainer = document.getElementById("container").id;
+      // let idContainer = document.getElementById("container").className;
+      // let idContainer = document.getElementById("container").getAttribute("id");
+      // let idContainer = document.getElementById("container").getAttribute("class");
+      // let idContainer = document.getElementById("container").setAttribute("id", "idContainer");
+      // let idContiner = document.getElementById("container").setAttribute("class", "classContainer heading");
+      // console.log(idContainer)
+
+      // let ul = document.querySelector("ul li").textContent;
+      // let ul = document.querySelector("ul li").innerHTML ="one hai bhai";
+      let ul = document.querySelectorAll("ul li");
+      // ul[0].style.color="red"
+      ul.forEach((e) => (e.style.color = "red"));
+
+      console.log(ul);
+    </script>
+  </body>
+</html>
